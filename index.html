@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Filipino Engineering Services (FES) – Premier provider of innovative engineering solutions in the Philippines. Construction, mechanical, electrical, OSH, and sustainability services." />
+  <meta name="keywords" content="Filipino Engineering Services, FES, engineering Philippines, mechanical engineer Cebu, construction Lapu-lapu, OSH compliance, HVAC, plumbing" />
+  <title>Filipino Engineering Services | Consult. Design. Build.</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:    { DEFAULT: '#002147', light: '#003066', dark: '#001230' },
+            gold:    { DEFAULT: '#FFB800', light: '#FFCD4A', dark: '#CC9200' },
+            red:     { DEFAULT: '#CE1126' },
+            steel:   { DEFAULT: '#4A6FA5' },
+            offwhite:{ DEFAULT: '#F5F7FA' },
+          },
+          fontFamily: {
+            display: ['Barlow Condensed', 'sans-serif'],
+            body:    ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="font-body bg-white text-gray-800 antialiased">
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-navy/95 backdrop-blur-sm shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <!-- Logo -->
+        <a href="#home" class="flex items-center gap-3 group">
+          <img src="assets/images/fes_logo.jpg" alt="FES Logo" class="h-10 md:h-14 w-auto rounded-full ring-2 ring-gold/40 group-hover:ring-gold transition-all duration-300" />
+          <div class="hidden sm:block">
+            <p class="font-display font-800 text-white text-lg leading-tight tracking-wide">FILIPINO ENGINEERING</p>
+            <p class="font-display text-gold text-sm tracking-widest">SERVICES</p>
+          </div>
+        </a>
+        <!-- Desktop Nav -->
+        <div class="hidden lg:flex items-center gap-1">
+          <a href="#about"    class="nav-link">About</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#industries" class="nav-link">Industries</a>
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+          <a href="#proprietor" class="nav-link">Proprietor</a>
+          <a href="#contact"  class="nav-link">Contact</a>
+          <a href="#contact" class="ml-4 px-5 py-2 bg-gold text-navy font-display font-700 text-sm tracking-wide rounded hover:bg-gold-light transition-colors duration-200">GET A QUOTE</a>
+        </div>
+        <!-- Mobile hamburger -->
+        <button id="menu-btn" class="lg:hidden text-white p-2 rounded focus:outline-none focus:ring-2 focus:ring-gold" aria-label="Toggle menu">
+          <svg id="icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-navy-dark border-t border-white/10">
+      <div class="px-4 py-4 flex flex-col gap-1">
+        <a href="#about"      class="mobile-nav-link">About</a>
+        <a href="#services"   class="mobile-nav-link">Services</a>
+        <a href="#industries" class="mobile-nav-link">Industries</a>
+        <a href="#portfolio"  class="mobile-nav-link">Portfolio</a>
+        <a href="#proprietor" class="mobile-nav-link">Proprietor</a>
+        <a href="#contact"    class="mobile-nav-link">Contact</a>
+        <a href="#contact" class="mt-2 text-center px-5 py-3 bg-gold text-navy font-display font-700 tracking-wide rounded">GET A QUOTE</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="relative min-h-screen flex items-center bg-navy overflow-hidden">
+    <!-- Blueprint grid background -->
+    <div class="absolute inset-0 blueprint-grid opacity-20"></div>
+    <!-- Diagonal accent -->
+    <div class="absolute bottom-0 right-0 w-1/2 h-full bg-gradient-to-tl from-gold/10 to-transparent pointer-events-none"></div>
+    <!-- Gold border-left accent -->
+    <div class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-transparent via-gold to-transparent"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Text -->
+      <div class="reveal">
+        <p class="font-display text-gold tracking-[0.3em] text-sm mb-4 uppercase">Consult · Design · Build</p>
+        <h1 class="font-display font-800 text-white text-5xl sm:text-6xl lg:text-7xl leading-none mb-6">
+          BUILDING A<br/>
+          <span class="text-gold">BETTER</span><br/>
+          FUTURE
+        </h1>
+        <p class="text-white/70 text-lg leading-relaxed max-w-md mb-8">
+          Premier engineering solutions across construction, mechanical, electrical, and sustainability services — proudly Filipino, globally competitive.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#contact" class="px-8 py-3 bg-gold text-navy font-display font-700 tracking-wide text-lg rounded hover:bg-gold-light transition-all duration-200 shadow-lg shadow-gold/20">GET A QUOTE</a>
+          <a href="#services" class="px-8 py-3 border border-white/30 text-white font-display tracking-wide text-lg rounded hover:border-gold hover:text-gold transition-all duration-200">OUR SERVICES</a>
+        </div>
+        <!-- Stats row -->
+        <div class="mt-12 flex gap-8 flex-wrap">
+          <div><p class="font-display text-gold text-4xl font-700">5+</p><p class="text-white/50 text-sm mt-1">Service Categories</p></div>
+          <div class="w-px bg-white/10"></div>
+          <div><p class="font-display text-gold text-4xl font-700">10+</p><p class="text-white/50 text-sm mt-1">Years Experience</p></div>
+          <div class="w-px bg-white/10"></div>
+          <div><p class="font-display text-gold text-4xl font-700">PME</p><p class="text-white/50 text-sm mt-1">PRC Licensed</p></div>
+        </div>
+      </div>
+      <!-- Logo -->
+      <div class="flex justify-center lg:justify-end reveal">
+        <div class="relative">
+          <div class="absolute inset-0 bg-gold/20 rounded-full blur-3xl scale-110"></div>
+          <img src="assets/images/fes_logo.jpg" alt="Filipino Engineering Services" class="relative w-72 h-72 md:w-96 md:h-96 rounded-full object-cover ring-4 ring-gold/50 shadow-2xl" />
+        </div>
+      </div>
+    </div>
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/40 animate-bounce">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="py-24 bg-offwhite">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal">
+          <p class="section-eyebrow">Who We Are</p>
+          <h2 class="section-title text-navy">About Filipino<br/><span class="text-gold">Engineering Services</span></h2>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Filipino Engineering Services (FES) is a premier provider of innovative and high-quality engineering solutions in the Philippines. Established to meet the growing demand for world-class engineering expertise, FES specializes in delivering cutting-edge services across multiple industries.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-8">
+            Our team of highly skilled engineers, designers, and project managers is committed to excellence, efficiency, and sustainability — leveraging advanced technology and industry best practices to ensure top-tier solutions tailored to your specific needs.
+          </p>
+          <a href="#contact" class="inline-block px-6 py-3 bg-navy text-white font-display tracking-wide rounded hover:bg-navy-light transition-colors duration-200">WORK WITH US</a>
+        </div>
+        <!-- VMG Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 reveal">
+          <div class="vmg-card bg-navy text-white">
+            <div class="vmg-icon bg-gold text-navy">👁️</div>
+            <h3 class="font-display text-xl font-700 mb-2">Our Vision</h3>
+            <p class="text-white/70 text-sm leading-relaxed">To be the leading Filipino engineering firm known for technical excellence, innovation, and sustainable solutions.</p>
+          </div>
+          <div class="vmg-card bg-white border border-gray-100">
+            <div class="vmg-icon bg-navy text-gold">🎯</div>
+            <h3 class="font-display text-xl font-700 text-navy mb-2">Our Mission</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Deliver high-quality engineering solutions that meet international standards while empowering Filipino communities.</p>
+          </div>
+          <div class="vmg-card bg-white border border-gray-100 sm:col-span-2">
+            <h3 class="font-display text-xl font-700 text-navy mb-3">Our Goals — <span class="text-gold">CESEG</span></h3>
+            <div class="grid grid-cols-2 gap-2 text-sm text-gray-600">
+              <div class="flex items-start gap-2"><span class="text-gold font-700 mt-0.5">C</span><span>Community Empowerment</span></div>
+              <div class="flex items-start gap-2"><span class="text-gold font-700 mt-0.5">E</span><span>Excellence in Engineering</span></div>
+              <div class="flex items-start gap-2"><span class="text-gold font-700 mt-0.5">S</span><span>Sustainability & Innovation</span></div>
+              <div class="flex items-start gap-2"><span class="text-gold font-700 mt-0.5">E</span><span>Ethics & Integrity</span></div>
+              <div class="flex items-start gap-2"><span class="text-gold font-700 mt-0.5">G</span><span>Global Competitiveness</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 reveal">
+        <p class="section-eyebrow">What We Do</p>
+        <h2 class="section-title text-navy">Our <span class="text-gold">Services</span></h2>
+        <p class="text-gray-500 max-w-xl mx-auto">From design consultancy to on-site execution, we deliver engineering excellence across every phase of your project.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap bg-navy/5">
+            <svg class="w-8 h-8 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-700 text-navy mb-2">Engineering Design & Consultancy</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">Sign & seal certifications (PTI, PTO), structural, civil, mechanical & electrical design, feasibility studies, technical assessments, and project management.</p>
+          <ul class="service-tags">
+            <li>Structural Design</li><li>Civil & MEP</li><li>Feasibility Studies</li><li>PTI / PTO Certs</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap bg-gold/10">
+            <svg class="w-8 h-8 text-gold-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-2 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-700 text-navy mb-2">Construction & Infrastructure</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">General contracting, roads & bridges, commercial & residential structures, and industrial building projects.</p>
+          <ul class="service-tags">
+            <li>General Contracting</li><li>Roads & Bridges</li><li>Industrial Buildings</li><li>Residential</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap bg-navy/5">
+            <svg class="w-8 h-8 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-700 text-navy mb-2">Mechanical & Electrical Engineering</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">HVAC, plumbing, fire protection systems, power distribution, renewable energy, automation, machining, and thermal spray coating.</p>
+          <ul class="service-tags">
+            <li>HVAC Systems</li><li>Fire Protection</li><li>Automation</li><li>Thermal Spray</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap bg-gold/10">
+            <svg class="w-8 h-8 text-gold-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-700 text-navy mb-2">OSH Compliance</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">Risk assessment, hazard analysis, DOLE-compliant safety training, and implementation of workplace safety programs.</p>
+          <ul class="service-tags">
+            <li>Risk Assessment</li><li>DOLE Compliance</li><li>Safety Training</li><li>OSH Programs</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap bg-navy/5">
+            <svg class="w-8 h-8 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-700 text-navy mb-2">Environmental & Sustainability</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">Green building solutions, environmental impact assessments, and water and waste management systems.</p>
+          <ul class="service-tags">
+            <li>Green Building</li><li>EIA Reports</li><li>Waste Management</li><li>Eco Design</li>
+          </ul>
+        </div>
+
+        <!-- Why Choose Us card -->
+        <div class="service-card bg-navy text-white reveal border-0">
+          <h3 class="font-display text-xl font-700 mb-4">Why Choose <span class="text-gold">FES?</span></h3>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start gap-3"><span class="text-gold mt-0.5">✔</span><span class="text-white/80">Highly qualified engineers with extensive industry experience</span></li>
+            <li class="flex items-start gap-3"><span class="text-gold mt-0.5">✔</span><span class="text-white/80">Adherence to international standards and best practices</span></li>
+            <li class="flex items-start gap-3"><span class="text-gold mt-0.5">✔</span><span class="text-white/80">Customized, client-centered solutions</span></li>
+            <li class="flex items-start gap-3"><span class="text-gold mt-0.5">✔</span><span class="text-white/80">Safety, sustainability, and long-term environmental focus</span></li>
+            <li class="flex items-start gap-3"><span class="text-gold mt-0.5">✔</span><span class="text-white/80">Modern tools and technology for efficient execution</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INDUSTRIES ===== -->
+  <section id="industries" class="py-24 bg-navy relative overflow-hidden">
+    <div class="absolute inset-0 blueprint-grid opacity-10"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 reveal">
+        <p class="section-eyebrow text-gold/70">Who We Serve</p>
+        <h2 class="section-title text-white">Industries We <span class="text-gold">Serve</span></h2>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div class="industry-card reveal"><div class="industry-icon">🏗️</div><p>Construction & Infrastructure</p></div>
+        <div class="industry-card reveal"><div class="industry-icon">🏭</div><p>Manufacturing & Industrial</p></div>
+        <div class="industry-card reveal"><div class="industry-icon">⚡</div><p>Energy & Power Generation</p></div>
+        <div class="industry-card reveal"><div class="industry-icon">🚛</div><p>Transportation & Logistics</p></div>
+        <div class="industry-card reveal"><div class="industry-icon">📡</div><p>Telecommunications</p></div>
+        <div class="industry-card reveal"><div class="industry-icon">🏢</div><p>Commercial & Residential</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section id="portfolio" class="py-24 bg-offwhite">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 reveal">
+        <p class="section-eyebrow">Track Record</p>
+        <h2 class="section-title text-navy">Projects & <span class="text-gold">Portfolio</span></h2>
+        <p class="text-gray-500 max-w-xl mx-auto">A selection of completed and on-going engineering projects that reflect our commitment to quality and innovation.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="flex flex-wrap justify-center gap-2 mb-10 reveal" id="filter-btns">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="construction">Construction</button>
+        <button class="filter-btn" data-filter="mechanical">Mechanical & Electrical</button>
+        <button class="filter-btn" data-filter="osh">OSH & Compliance</button>
+        <button class="filter-btn" data-filter="consultancy">Consultancy</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolio-grid">
+
+        <div class="portfolio-card reveal" data-category="construction">
+          <div class="portfolio-img-wrap bg-navy/80">
+            <div class="portfolio-placeholder-icon">🏗️</div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">Construction</span>
+            <h4 class="portfolio-title">Horizontal & Vertical Structure – MEPFS Installation</h4>
+            <p class="portfolio-desc">Installation of mechanical, electrical, plumbing, fire, and sanitary (MEPFS) works for multi-story commercial and residential buildings.</p>
+            <p class="portfolio-status completed">✔ Completed</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="mechanical">
+          <div class="portfolio-img-wrap bg-steel/80">
+            <div class="portfolio-placeholder-icon">❄️</div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">Mechanical</span>
+            <h4 class="portfolio-title">HVAC System Design & Installation</h4>
+            <p class="portfolio-desc">Design, supply, and installation of HVAC systems for hotel and commercial facilities, ensuring energy-efficient climate control.</p>
+            <p class="portfolio-status completed">✔ Completed</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="osh">
+          <div class="portfolio-img-wrap bg-red/80">
+            <div class="portfolio-placeholder-icon">🦺</div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">OSH Compliance</span>
+            <h4 class="portfolio-title">DOLE OSH Safety Program Implementation</h4>
+            <p class="portfolio-desc">Comprehensive workplace safety program rollout including hazard identification, COSH/BOSH training, and compliance documentation.</p>
+            <p class="portfolio-status completed">✔ Completed</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="mechanical">
+          <div class="portfolio-img-wrap bg-navy/70">
+            <div class="portfolio-placeholder-icon">🔥</div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">Fire Protection</span>
+            <h4 class="portfolio-title">Fire Protection System Design – Commercial Building</h4>
+            <p class="portfolio-desc">Complete fire protection system design including sprinkler layout, fire alarm integration, and BFP compliance documentation for permit applications.</p>
+            <p class="portfolio-status completed">✔ Completed</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="consultancy">
+          <div class="portfolio-img-wrap bg-gold-dark/80">
+            <div class="portfolio-placeholder-icon">📋</div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">Consultancy</span>
+            <h4 class="portfolio-title">PTO / PTI Sign & Seal Certifications</h4>
+            <p class="portfolio-desc">Technical review and sign & seal services for Permit to Operate and Permit to Install applications across multiple mechanical and electrical installations.</p>
+            <p class="portfolio-status ongoing">⏳ On-going</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="construction">
+          <div class="portfolio-img-wrap bg-navy-light/70">
+            <div class="portfolio-placeholder-icon">🔧</div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">Mechanical</span>
+            <h4 class="portfolio-title">Thermal Spray Coating & Machine Shop Works</h4>
+            <p class="portfolio-desc">Restoration of machine components through thermal spray coating application, extending service life for industrial and marine clients.</p>
+            <p class="portfolio-status completed">✔ Completed</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA to add more projects -->
+      <div class="mt-12 text-center reveal">
+        <p class="text-gray-400 text-sm mb-4">More completed projects coming soon. Have a project in mind?</p>
+        <a href="#contact" class="inline-block px-8 py-3 bg-navy text-white font-display tracking-wide rounded hover:bg-navy-light transition-colors duration-200">DISCUSS YOUR PROJECT</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROPRIETOR ===== -->
+  <section id="proprietor" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-start">
+        <div class="reveal">
+          <p class="section-eyebrow">Our Leadership</p>
+          <h2 class="section-title text-navy">The <span class="text-gold">Proprietor</span></h2>
+          <div class="flex items-center gap-5 mb-6">
+            <img src="assets/images/fes_logo.jpg" alt="Rosendo Gevana" class="w-20 h-20 rounded-full object-cover ring-2 ring-gold/40" />
+            <div>
+              <h3 class="font-display text-2xl font-700 text-navy">Rosendo M. Gevana</h3>
+              <p class="text-gold font-600 text-sm tracking-wide">PME · RMP · LPT · CEA · SO2</p>
+              <p class="text-gray-400 text-sm">General Manager / Technical Manager</p>
+            </div>
+          </div>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            A Professional and result-oriented Mechanical Engineer with extensive experience in mechanical works — including piping installation and construction, machine shop, forging, casting, industrial processes, building operations and maintenance, and quality control. Eng'r Gevana has led engineering teams across five-star hotels, condominium towers, and major construction projects both in the Philippines and in Saudi Arabia.
+          </p>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="cred-badge"><span class="cred-code">PME</span><span class="cred-label">Professional Mechanical Engineer<br/><span class="text-gray-400">PRC #0006565</span></span></div>
+            <div class="cred-badge"><span class="cred-code">RMP</span><span class="cred-label">Registered Master Plumber<br/><span class="text-gray-400">PRC #0020868</span></span></div>
+            <div class="cred-badge"><span class="cred-code">LPT</span><span class="cred-label">Licensed Professional Teacher<br/><span class="text-gray-400">PRC #1903066</span></span></div>
+            <div class="cred-badge"><span class="cred-code">CEA</span><span class="cred-label">Certified Energy Auditor<br/><span class="text-gray-400">DOE-CEA-250801543</span></span></div>
+          </div>
+        </div>
+        <!-- Timeline -->
+        <div class="reveal">
+          <h3 class="font-display text-xl font-700 text-navy mb-6">Career Highlights</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot bg-gold"></div>
+              <div>
+                <p class="timeline-year">2024 – Present</p>
+                <p class="timeline-role">General Manager / Technical Manager</p>
+                <p class="timeline-org">Filipino Engineering Services, Lapu-lapu City</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot bg-navy"></div>
+              <div>
+                <p class="timeline-year">Feb – Oct 2024</p>
+                <p class="timeline-role">Engineering Manager</p>
+                <p class="timeline-org">Dusit Thani Mactan Cebu Resort</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot bg-navy"></div>
+              <div>
+                <p class="timeline-year">2022 – 2024</p>
+                <p class="timeline-role">Chief Engineer</p>
+                <p class="timeline-org">Crown Regency Hotel & Towers, Cebu City</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot bg-navy"></div>
+              <div>
+                <p class="timeline-year">2019 – 2022</p>
+                <p class="timeline-role">MEPFS QA/QC Engineer</p>
+                <p class="timeline-org">Scheirman Construction Consolidated Inc.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot bg-navy"></div>
+              <div>
+                <p class="timeline-year">2018 – 2019</p>
+                <p class="timeline-role">QA/QC Inspector II</p>
+                <p class="timeline-org">Aboitiz Construction Inc., Cebu</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot bg-steel"></div>
+              <div>
+                <p class="timeline-year">2016 – 2018</p>
+                <p class="timeline-role">Scaffolding Supervisor / Work Permit Receiver</p>
+                <p class="timeline-org">Br.C.A.T. International – Saudi Aramco Projects, KSA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="py-24 bg-navy relative overflow-hidden">
+    <div class="absolute inset-0 blueprint-grid opacity-10"></div>
+    <div class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-transparent via-gold to-transparent"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-start">
+        <!-- Info -->
+        <div class="reveal">
+          <p class="section-eyebrow text-gold/70">Get In Touch</p>
+          <h2 class="section-title text-white">Contact <span class="text-gold">Us</span></h2>
+          <p class="text-white/60 leading-relaxed mb-8">Ready to start your project? Reach out for a free consultation. We serve clients across the Philippines and are experienced in international project standards.</p>
+          <div class="space-y-5">
+            <div class="contact-info-row">
+              <div class="contact-icon">📍</div>
+              <div><p class="contact-label">Office Address</p><p class="contact-value">Pusok, Lapu-lapu City, 6015 Cebu, Philippines</p></div>
+            </div>
+            <div class="contact-info-row">
+              <div class="contact-icon">📞</div>
+              <div><p class="contact-label">Phone</p><p class="contact-value">+63 956-063-6105 / +63 939-663-2368</p></div>
+            </div>
+            <div class="contact-info-row">
+              <div class="contact-icon">📧</div>
+              <div><p class="contact-label">Email</p><p class="contact-value">filipinoengineering25@gmail.com</p></div>
+            </div>
+          </div>
+          <div class="mt-8 p-5 bg-white/5 rounded-lg border border-white/10">
+            <p class="text-gold font-display text-lg font-700 mb-1">Rosendo M. Gevana, PME</p>
+            <p class="text-white/50 text-sm">Available for consultations, sign & seal, and project management engagements.</p>
+          </div>
+        </div>
+        <!-- Form -->
+        <div class="reveal">
+          <form id="contact-form" class="bg-white rounded-xl p-8 shadow-2xl">
+            <h3 class="font-display text-2xl font-700 text-navy mb-6">Send Us a Message</h3>
+            <div class="grid sm:grid-cols-2 gap-4 mb-4">
+              <div>
+                <label class="form-label" for="name">Full Name *</label>
+                <input id="name" type="text" class="form-input" placeholder="Juan dela Cruz" required />
+              </div>
+              <div>
+                <label class="form-label" for="phone">Phone Number</label>
+                <input id="phone" type="tel" class="form-input" placeholder="+63 9XX XXX XXXX" />
+              </div>
+            </div>
+            <div class="mb-4">
+              <label class="form-label" for="email">Email Address *</label>
+              <input id="email" type="email" class="form-input" placeholder="your@email.com" required />
+            </div>
+            <div class="mb-4">
+              <label class="form-label" for="service">Service Needed</label>
+              <select id="service" class="form-input">
+                <option value="">Select a service…</option>
+                <option>Engineering Design & Consultancy</option>
+                <option>Construction & Infrastructure Development</option>
+                <option>Mechanical & Electrical Engineering</option>
+                <option>OSH Compliance</option>
+                <option>Environmental & Sustainability Solutions</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="mb-6">
+              <label class="form-label" for="message">Message *</label>
+              <textarea id="message" rows="4" class="form-input resize-none" placeholder="Describe your project or inquiry…" required></textarea>
+            </div>
+            <button type="submit" class="w-full py-3 bg-navy text-white font-display font-700 tracking-wide text-lg rounded hover:bg-navy-light transition-colors duration-200">SEND MESSAGE</button>
+            <p id="form-success" class="hidden mt-4 text-center text-green-600 font-600 text-sm">✔ Message sent! We'll get back to you shortly.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-navy-dark border-t border-white/10 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/images/fes_logo.jpg" alt="FES Logo" class="h-12 w-12 rounded-full object-cover ring-2 ring-gold/30" />
+            <div>
+              <p class="font-display font-700 text-white text-sm">FILIPINO ENGINEERING SERVICES</p>
+              <p class="text-gold/70 text-xs tracking-widest">CONSULT · DESIGN · BUILD</p>
+            </div>
+          </div>
+          <p class="text-white/40 text-xs leading-relaxed">Premier provider of innovative and high-quality engineering solutions in the Philippines.</p>
+        </div>
+        <div>
+          <p class="footer-heading">Quick Links</p>
+          <ul class="space-y-1 text-sm">
+            <li><a href="#about" class="footer-link">About Us</a></li>
+            <li><a href="#services" class="footer-link">Services</a></li>
+            <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Contact</p>
+          <p class="text-white/50 text-sm mb-1">Pusok, Lapu-lapu City, 6015 Cebu</p>
+          <p class="text-white/50 text-sm mb-1">+63 956-063-6105</p>
+          <p class="text-white/50 text-sm">filipinoengineering25@gmail.com</p>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div class="flex flex-col items-center sm:items-start gap-1">
+          <p class="text-white/30 text-xs">© 2026 Filipino Engineering Services. All Rights Reserved.</p>
+          <p class="text-white/15 text-xs">Website by Roel Gevana</p>
+        </div>
+        <p class="text-white/20 text-xs text-center sm:text-right">Owned & Operated by Rosendo M. Gevana, PME · PRC #0006565</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

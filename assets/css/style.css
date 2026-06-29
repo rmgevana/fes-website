@@ -1,0 +1,343 @@
+/* ===== FES – Filipino Engineering Services ===== */
+/* Custom styles complementing Tailwind CSS         */
+
+/* ---------- TYPOGRAPHY & BASE ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body { overflow-x: hidden; }
+
+/* ---------- BACKGROUND PATTERN ---------- */
+.blueprint-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* ---------- NAVBAR ---------- */
+.nav-link {
+  color: rgba(255,255,255,0.75);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  transition: color 0.2s, background-color 0.2s;
+}
+.nav-link:hover { color: #FFB800; background-color: rgba(255,184,0,0.08); }
+
+.mobile-nav-link {
+  display: block;
+  color: rgba(255,255,255,0.75);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  transition: color 0.2s;
+}
+.mobile-nav-link:hover { color: #FFB800; }
+
+#navbar.scrolled {
+  background-color: rgba(0,33,71,0.98);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+}
+
+/* ---------- SECTION LABELS ---------- */
+.section-eyebrow {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #FFB800;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.section-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.05;
+  margin-bottom: 1.25rem;
+}
+
+/* ---------- ABOUT VMG CARDS ---------- */
+.vmg-card {
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  transition: transform 0.2s;
+}
+.vmg-card:hover { transform: translateY(-3px); }
+
+.vmg-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+/* ---------- SERVICE CARDS ---------- */
+.service-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.service-card:hover {
+  border-color: #FFB800;
+  box-shadow: 0 8px 30px rgba(255,184,0,0.12);
+  transform: translateY(-4px);
+}
+
+.service-icon-wrap {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.service-tags li {
+  font-size: 0.7rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  background: #F5F7FA;
+  color: #002147;
+  border-radius: 999px;
+}
+
+/* ---------- INDUSTRY CARDS ---------- */
+.industry-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 0.75rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+  cursor: default;
+}
+.industry-card:hover {
+  background: rgba(255,184,0,0.1);
+  border-color: rgba(255,184,0,0.4);
+  transform: translateY(-3px);
+}
+.industry-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+.industry-card p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  color: rgba(255,255,255,0.75);
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+/* ---------- PORTFOLIO ---------- */
+.filter-btn {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.5rem 1.25rem;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  color: #6b7280;
+  background: #fff;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.filter-btn:hover, .filter-btn.active {
+  background: #002147;
+  color: #FFB800;
+  border-color: #002147;
+}
+
+.portfolio-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(0,33,71,0.12);
+}
+.portfolio-card.hidden { display: none; }
+
+.portfolio-img-wrap {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.portfolio-placeholder-icon { font-size: 3.5rem; }
+
+.portfolio-info { padding: 1.25rem; }
+
+.portfolio-tag {
+  display: inline-block;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFB800;
+  background: rgba(255,184,0,0.1);
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  margin-bottom: 0.5rem;
+}
+.portfolio-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #002147;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
+.portfolio-desc { font-size: 0.8rem; color: #6b7280; line-height: 1.5; margin-bottom: 0.75rem; }
+
+.portfolio-status { font-size: 0.75rem; font-weight: 600; }
+.portfolio-status.completed { color: #16a34a; }
+.portfolio-status.ongoing { color: #ca8a04; }
+
+/* ---------- CREDENTIALS ---------- */
+.cred-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #F5F7FA;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+}
+.cred-code {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: #002147;
+  min-width: 2.5rem;
+}
+.cred-label { font-size: 0.72rem; color: #374151; line-height: 1.4; }
+
+/* ---------- TIMELINE ---------- */
+.timeline { position: relative; padding-left: 1.5rem; }
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.45rem;
+  top: 0.5rem;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #FFB800, #002147, #4A6FA5);
+  border-radius: 1px;
+}
+.timeline-item {
+  position: relative;
+  padding-left: 1.5rem;
+  padding-bottom: 1.75rem;
+  display: flex;
+  gap: 1rem;
+}
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-dot {
+  position: absolute;
+  left: -0.475rem;
+  top: 0.35rem;
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px currentColor;
+  flex-shrink: 0;
+}
+.timeline-year { font-size: 0.7rem; color: #FFB800; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; }
+.timeline-role { font-family: 'Barlow Condensed', sans-serif; font-size: 1.05rem; font-weight: 700; color: #002147; line-height: 1.2; }
+.timeline-org  { font-size: 0.8rem; color: #6b7280; }
+
+/* ---------- CONTACT FORM ---------- */
+.form-label { display: block; font-size: 0.8rem; font-weight: 600; color: #374151; margin-bottom: 0.375rem; letter-spacing: 0.02em; }
+.form-input {
+  width: 100%;
+  padding: 0.65rem 0.875rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  color: #111827;
+  background: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+.form-input:focus {
+  border-color: #002147;
+  box-shadow: 0 0 0 3px rgba(0,33,71,0.1);
+}
+
+/* ---------- CONTACT INFO ROW ---------- */
+.contact-info-row { display: flex; align-items: flex-start; gap: 1rem; }
+.contact-icon { font-size: 1.25rem; margin-top: 0.1rem; }
+.contact-label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,184,0,0.7); margin-bottom: 0.15rem; }
+.contact-value { font-size: 0.9rem; color: rgba(255,255,255,0.75); }
+
+/* ---------- FOOTER ---------- */
+.footer-heading {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #FFB800;
+  margin-bottom: 0.75rem;
+}
+.footer-link { display: block; color: rgba(255,255,255,0.45); font-size: 0.875rem; padding: 0.2rem 0; transition: color 0.2s; }
+.footer-link:hover { color: #FFB800; }
+
+/* ---------- SCROLL REVEAL ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- REDUCED MOTION ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  html { scroll-behavior: auto; }
+}
