@@ -114,6 +114,59 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  /* ---------- HERO SLIDESHOW ---------- */
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots = document.querySelectorAll('.slide-dot');
+  let currentSlide = 0;
+  let slideInterval;
+
+  function goToSlide(index) {
+    // Remove active from all slides and dots
+    slides.forEach(s => s.classList.remove('active'));
+    dots.forEach(d => d.classList.remove('active'));
+
+    // Set active on target
+    slides[index].classList.add('active');
+    dots[index].classList.add('active');
+    currentSlide = index;
+  }
+
+  function nextSlide() {
+    const next = (currentSlide + 1) % slides.length;
+    goToSlide(next);
+  }
+
+  function startSlideshow() {
+    stopSlideshow();
+    slideInterval = setInterval(nextSlide, 4000);
+  }
+
+  function stopSlideshow() {
+    if (slideInterval) clearInterval(slideInterval);
+  }
+
+  // Dot click handlers
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      goToSlide(i);
+      stopSlideshow();
+      slideInterval = setInterval(nextSlide, 4000);
+    });
+  });
+
+  // Initialize slideshow if slides exist
+  if (slides.length > 0) {
+    goToSlide(0);
+    startSlideshow();
+
+    // Pause on hover
+    const slideshowContainer = document.querySelector('.hero-slideshow');
+    if (slideshowContainer) {
+      slideshowContainer.addEventListener('mouseenter', stopSlideshow);
+      slideshowContainer.addEventListener('mouseleave', startSlideshow);
+    }
+  }
+
   /* ---------- CONTACT FORM ---------- */
   const contactForm = document.getElementById('contact-form');
   const formSuccess = document.getElementById('form-success');

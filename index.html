@@ -6,6 +6,7 @@
   <meta name="description" content="Filipino Engineering Services (FES) – Premier provider of innovative engineering solutions in the Philippines. Construction, mechanical, electrical, OSH, and sustainability services." />
   <meta name="keywords" content="Filipino Engineering Services, FES, engineering Philippines, mechanical engineer Cebu, construction Lapu-lapu, OSH compliance, HVAC, plumbing" />
   <title>Filipino Engineering Services | Consult. Design. Build.</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -110,11 +111,50 @@
           <div><p class="font-display text-gold text-4xl font-700">PME</p><p class="text-white/50 text-sm mt-1">PRC Licensed</p></div>
         </div>
       </div>
-      <!-- Logo -->
+      <!-- Hero Slideshow -->
       <div class="flex justify-center lg:justify-end reveal">
-        <div class="relative">
-          <div class="absolute inset-0 bg-gold/20 rounded-full blur-3xl scale-110"></div>
-          <img src="assets/images/fes_logo.jpg" alt="Filipino Engineering Services" class="relative w-72 h-72 md:w-96 md:h-96 rounded-full object-cover ring-4 ring-gold/50 shadow-2xl" />
+        <div class="relative w-full max-w-md lg:max-w-lg">
+          <div class="absolute inset-0 bg-gold/20 rounded-2xl blur-3xl scale-110"></div>
+          <div class="hero-slideshow relative w-full aspect-square rounded-2xl overflow-hidden ring-4 ring-gold/50 shadow-2xl">
+            <!-- Slide 1: Construction -->
+            <div class="hero-slide absolute inset-0 transition-opacity duration-700">
+              <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80" alt="Construction & Infrastructure" class="w-full h-full object-cover" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent"></div>
+              <span class="absolute bottom-4 left-4 right-4 font-display text-white text-lg font-700 tracking-wide">Construction & Infrastructure</span>
+            </div>
+            <!-- Slide 2: Mechanical Engineering -->
+            <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-700">
+              <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80" alt="Mechanical & Electrical Engineering" class="w-full h-full object-cover" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent"></div>
+              <span class="absolute bottom-4 left-4 right-4 font-display text-white text-lg font-700 tracking-wide">Mechanical & Electrical</span>
+            </div>
+            <!-- Slide 3: OSH Compliance -->
+            <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-700">
+              <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800&q=80" alt="OSH Compliance" class="w-full h-full object-cover" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent"></div>
+              <span class="absolute bottom-4 left-4 right-4 font-display text-white text-lg font-700 tracking-wide">OSH Compliance & Safety</span>
+            </div>
+            <!-- Slide 4: Sustainability -->
+            <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-700">
+              <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80" alt="Environmental & Sustainability" class="w-full h-full object-cover" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent"></div>
+              <span class="absolute bottom-4 left-4 right-4 font-display text-white text-lg font-700 tracking-wide">Environmental & Sustainability</span>
+            </div>
+            <!-- Slide 5: Engineering Design -->
+            <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-700">
+              <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80" alt="Engineering Design & Consultancy" class="w-full h-full object-cover" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent"></div>
+              <span class="absolute bottom-4 left-4 right-4 font-display text-white text-lg font-700 tracking-wide">Engineering Design & Consultancy</span>
+            </div>
+          </div>
+          <!-- Slide dots -->
+          <div class="flex justify-center gap-2 mt-4">
+            <button class="slide-dot w-2.5 h-2.5 rounded-full bg-gold transition-all duration-300" aria-label="Slide 1"></button>
+            <button class="slide-dot w-2.5 h-2.5 rounded-full bg-white/30 hover:bg-white/50 transition-all duration-300" aria-label="Slide 2"></button>
+            <button class="slide-dot w-2.5 h-2.5 rounded-full bg-white/30 hover:bg-white/50 transition-all duration-300" aria-label="Slide 3"></button>
+            <button class="slide-dot w-2.5 h-2.5 rounded-full bg-white/30 hover:bg-white/50 transition-all duration-300" aria-label="Slide 4"></button>
+            <button class="slide-dot w-2.5 h-2.5 rounded-full bg-white/30 hover:bg-white/50 transition-all duration-300" aria-label="Slide 5"></button>
+          </div>
         </div>
       </div>
     </div>
