@@ -336,6 +336,21 @@ body { overflow-x: hidden; }
   transform: translateY(0);
 }
 
+/* ---------- HERO SLIDESHOW ---------- */
+.hero-slideshow {
+  background: #001230;
+}
+
+.hero-slide.active {
+  opacity: 1 !important;
+}
+
+.slide-dot.active {
+  background-color: #FFB800 !important;
+  width: 1.5rem !important;
+  border-radius: 999px !important;
+}
+
 /* ---------- REDUCED MOTION ---------- */
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
